@@ -1,0 +1,39 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "eslint.enable": true,
+    "eslint.validate": ["javascript", "typescript"],
+    "eslint.packageManager": "yarn",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "yarn.lock": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/lib": true
+    },
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/**": true,
+      "**/examples/*/lib/**": true,
+      "**/challenges/*/lib/**": true
+    },
+    "code-runner.executorMap": {
+      "javascript": "node",
+      "typescript": "node_modules/.bin/ts-node"
+    }
+  },
+  "extensions": {
+    "recommendations": ["dbaeumer.vscode-eslint", "formulahendry.code-runner"]
+  }
+}
