@@ -1,5 +1,4 @@
 import { HasTail, HasWings, HasLegs } from './1-basics';
-import { type } from 'os';
 
 /* TYPE ALIAS */
 
