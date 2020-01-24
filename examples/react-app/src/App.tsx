@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
-import Dog from './Dog';
-import Form from './Form';
 
 const App: React.FC = () => {
-  // Types get inferred
+  const [dog, setDog] = useState({ name: 'domi', breed: 'puddle' });
 
+  // Types get inferred
   // const [name, setName] = useState('domi');
   // const [breed, setBreed] = useState('puddle');
   // const dog: Dog = {
   //   name,
   //   breed
   // };
-
-  const [dog, setDog] = useState<Dog>({ name: 'domi', breed: 'puddle' });
 
   // You can also specify the type
   // const [age, setAge] = useState<string>('2');
@@ -24,10 +21,10 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <Dog dog={dog} isAmazing={true}></Dog>
+      <p>Dog component here: </p>
 
-      {/* <p>Can i get intellisense inside callback functions?</p> */}
-      {/* <Form handleNameChange={(e) => e. }></Form> */}
+      <p>Can i get intellisense inside callback functions?</p>
+      <p>Form Component here: </p>
     </div>
   );
 };

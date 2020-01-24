@@ -1,24 +1,22 @@
 import React, { Fragment } from 'react';
 
-interface Dog {
-  name: string;
-  breed: string;
-}
-
 interface DogProps {
-  dog: Dog;
+  dog: {
+    name: string;
+    breed: string;
+  };
   isAmazing: boolean;
 }
 
-const Dog: React.FC<DogProps> = ({ dog: { name, breed }, isAmazing }) => {
+const Dog: React.FC<DogProps> = ({ dog: { breed, name }, isAmazing }) => {
   return (
     <Fragment>
       <p>Dog name: {name}</p>
       <p>Dog breed: {breed}</p>
       {isAmazing ? (
-        <div> This dog is amazing</div>
+        <p> This dog is amazing</p>
       ) : (
-        <div>All dogs are amazing anyways</div>
+        <p>All dogs are amazing anyways</p>
       )}
     </Fragment>
   );
