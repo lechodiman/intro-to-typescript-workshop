@@ -3,7 +3,8 @@ import Dog from './Dog';
 import Form from './Form';
 
 const App: React.FC = () => {
-  // Type gets infered
+  // Types get inferred
+
   // const [name, setName] = useState('domi');
   // const [breed, setBreed] = useState('puddle');
   // const dog: Dog = {

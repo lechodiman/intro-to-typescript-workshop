@@ -8,5 +8,5 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false
   },
-  "include": ["examples/*/src", "challenges/*/src", "notes"]
+  "include": ["challenges/*/src", "notes", "examples/*/src"]
 }

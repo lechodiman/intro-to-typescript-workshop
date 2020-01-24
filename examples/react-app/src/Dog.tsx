@@ -5,15 +5,12 @@ interface Dog {
   breed: string;
 }
 
-interface Props {
-  dog: {
-    name: string;
-    breed: string;
-  };
+interface DogProps {
+  dog: Dog;
   isAmazing: boolean;
 }
 
-const Dog: React.FC<Props> = ({ dog: { name, breed }, isAmazing }) => {
+const Dog: React.FC<DogProps> = ({ dog: { name, breed }, isAmazing }) => {
   return (
     <Fragment>
       <p>Dog name: {name}</p>
